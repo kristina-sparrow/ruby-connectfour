@@ -1,0 +1,11 @@
+AllCops:
+  Exclude:
+    - "spec/*"
+
+Style/Documentation:
+  Description: "Document classes and non-namespace modules."
+  Enabled: false
+
+Layout/LineLength:
+  Description: "Limit lines to 120 characters. (Default is 80)"
+  Max: 120
