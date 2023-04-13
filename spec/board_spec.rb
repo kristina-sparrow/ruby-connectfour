@@ -298,8 +298,7 @@ describe Board do
         expect(board).not_to be_row_has_connected_four
       end
     end
-  end
-  
+
     context 'when no connected four found' do
       it 'returns false' do
         value = [
