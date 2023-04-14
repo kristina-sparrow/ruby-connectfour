@@ -19,6 +19,7 @@ class Board
   def add_disc(move, disc)
     column = move - 1
     return if @column_to_rows_mapping[column].empty?
+
     @last_changed_row = @column_to_rows_mapping[column].pop
     @last_changed_column = column
     board[@last_changed_row][column] = disc
@@ -34,6 +35,7 @@ class Board
 
   def win?
     return false if board_empty?
+
     row_has_connected_four? || column_has_connected_four? || diagonal_has_connected_four?
   end
 
@@ -109,11 +111,13 @@ class Board
 
   def update_first_half(first_half, row, column)
     return unless boundary_satisifed?(row, column)
+
     first_half << @board[row][column]
   end
 
   def update_second_half(second_half, row, column)
     return unless boundary_satisifed?(row, column)
+
     second_half << @board[row][column]
   end
 

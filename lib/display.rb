@@ -29,22 +29,22 @@ module Display
 
   def print_rules
     puts <<~RULES
-    * Two player game
-    * Choose a column to put a disc
-    * If a player gets a disc connected four, they win
-    * Connected four can be in rows, columns or diagonals
-    * If all columns get filled, then the game is a draw
+      * Two player game
+      * Choose a column to put a disc
+      * If a player gets a disc connected four, they win
+      * Connected four can be in rows, columns or diagonals
+      * If all columns get filled, then the game is a draw
 
     RULES
   end
 
   def player1_name_prompt
-    puts "Enter player 1 name (Max length: 15)"
+    puts 'Enter player 1 name (Max length: 15)'
     print_prompt
   end
 
   def player2_name_prompt
-    puts "Enter player 2 name (Max length: 15)"
+    puts 'Enter player 2 name (Max length: 15)'
     print_prompt
   end
 
@@ -56,11 +56,11 @@ module Display
   end
 
   def player1_marker_prompt
-    puts "Select player1 marker (Enter one option):"
+    puts 'Select player1 marker (Enter one option):'
   end
-  
+
   def player2_marker_prompt
-    puts "Select player2 marker (Enter one option):"
+    puts 'Select player2 marker (Enter one option):'
   end
 
   def print_column_number_prompt
