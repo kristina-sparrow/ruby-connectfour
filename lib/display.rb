@@ -29,7 +29,6 @@ module Display
 
   def print_rules
     puts <<~RULES
-
     * Two player game
     * Choose a column to put a disc
     * If a player gets a disc connected four, they win
@@ -57,15 +56,15 @@ module Display
   end
 
   def player1_marker_prompt
-    puts "Select player1 marker (Enter One Option):"
+    puts "Select player1 marker (Enter one option):"
   end
   
   def player2_marker_prompt
-    puts "Select player2 marker (Enter One Option):"
+    puts "Select player2 marker (Enter one option):"
   end
 
   def print_column_number_prompt
-    puts "Enter a Column number (1-7)"
+    puts "\nEnter a Column number (1-7)"
     print_prompt
   end
 
@@ -75,7 +74,8 @@ module Display
 
   def print_current_player_data
     puts <<~PLAYER
-      #{color_text(@current_player.name, :green)}(#{color_text(@current_player.marker.capitalize, @current_player.marker.to_sym)})'s move:
+      #{color_text(@current_player.name, :green)}(#{color_text(@current_player.marker.capitalize, @current_player.marker.to_sym)})'s move
+
     PLAYER
   end
 
@@ -106,7 +106,7 @@ module Display
   def print_thanks
     puts <<~THANKS
 
-      [0;1;35;95mTh[0;1;31;91man[0;1;33;93mks[0m [0;1;32;92mf[0;1;36;96mor[0m [0;1;34;94mp[0;1;35;95mla[0;1;31;91myi[0;1;33;93mng[0m [0;1;32;92m:[0;1;36;96m).[0;1;34;94m..[0;1;35;95m..[0;1;31;91m![0m
+      [0;1;35;95mTh[0;1;31;91man[0;1;33;93mks[0m [0;1;32;92mf[0;1;36;96mor[0m [0;1;34;94mp[0;1;35;95mla[0;1;31;91myi[0;1;33;93mng[0m [0;1;32;92m:[0;1;36;96m)[0m
 
     THANKS
   end
